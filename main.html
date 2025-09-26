@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="./output.css" rel="stylesheet">  
+    <title>IUO Accomadation</title>   
+    <style>
+        .bg-img{
+                    background-image: url(./image/library.webp);
+                    min-height: 642px;          
+        }
+    </style>   
+</head>
+<body>
+    <!-- This below is how to add image bachground in Tailwind -->
+    <!-- bg-[url('https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/bg-with-grid.png')] bg-cover bg-center bg-no-repeat -->
+
+                                    <!-- Header and Hero Section -->
+    <section class="bg-img bg-cover bg-center bg-no-repeat pb-32 md:pb-44 text-slate-800 text-sm">
+        <!-- <img src="./image/iuo.webp" alt="IUO Main Entrance" class="h-screen"> -->
+        <div class="absolute inset-0 bg-black/50 opacity-100">
+            <nav class="max-md:relative fixed z-3 top-0 flex items-center justify-between p-4 md:px-16 lg:px-24 xl:px-32 border-b border-white/25 w-full md:backdrop-blur-lg md:backdrop-brightness-48">
+                <a href="https://prebuiltui.com" class="flex items-center space-x-3">
+                    <img src="./image/iuo logo.webp" alt="IUO Logo" class="w-20 rounded-lg">
+                    <span class="text-5xl text-slate-800 font-mono font-medium tracking-wide">IUO</span> 
+                </a>
+                <ul id="menu" class="text-md max-md:absolute max-md:z-50 max-md:w-full max-md:py-6 max-md:top-3 max-md:-left-full transition-all duration-300 max-md:backdrop-blur max-md:bg-white/70 max-md:text-base flex flex-col md:flex-row items-center justify-center gap-8 font-medium">
+                    <li onclick="closeNavbar()" class="text-blue-400 hover:text-slate-900"><a href="./main.html">Home</a></li>
+                    <li onclick="closeNavbar()" class=" text-slate-300 max-sm:text-slate-900 sm:hover:text-slate-800 hover:text-slate-300"><a href="./gallary.html">Galary</a></li>
+                    <li onclick="closeNavbar()" class="text-slate-300 max-sm:text-slate-900 hover:text-slate-300"><a href="./about.html">About</a></li>
+
+                    <button id="close-menu"
+                        class="md:hidden bg-gray-800 hover:bg-black text-white p-2 rounded-md aspect-square font-medium transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="" >
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" /> 
+                        </svg>
+                    </button>
+                </ul>
+                <button id="open-menu" class="md:hidden ">
+                    <svg class="size-7 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <button class="max-md:hidden px-6 py-3 text-md text-slate-100 bg-linear-to-br from-blue-400 to-blue-700 hover:shadow-lg shadow-slate-700 hover:opacity-80 transition duration-700 rounded-full">
+                    <a href="https://iuokada.edu.ng/" class="text-slate-100">Contact us</a>
+                </button>
+            </nav>        
+            <div class="flex flex-col-reverse gap-10 md:flex-row px-4 md:px-16 lg:px-24 xl:px-32 mt-12 md:mt-32"> 
+                <div class="max-md:text-center">
+                    <h5 class="text-5xl text-pretty leading-13 lg:leading-16 tracking-wide lg:text-6xl/[76px] font-semibold max-w-xl bg-gradient-to-b md:bg-gradient-to-r from-blue-50 md:from-blue-50 to-[#f6f6f7] md:to-[#f5f5f7] text-transparent bg-clip-text">
+                        Igbinedion University Okada, The first Premier private university in nigeria.
+                    </h5>
+
+                    <p class="text-lg md:text-xl max-w-lg mt-6 max-md:px-2 px-4 py-2 text-blue-50 font-semibold text-pretty backdrop-blur-2xl rounded-lg">
+                        Book your room from our wide variety of 5 Star Hostels, that offers you the comform and condusive environment for learning. 
+                    </p>
+                </div>            
+            </div>
+        </div>        
+    </section>
+                                    <!-- Girl's Hostel  -->
+    <section class="bg-linear-to-br from-slate-50 to-slate-100 ">
+        <h1 class="pt-12 tracking-wider text-center text-6xl 
+        bg-linear-to-r from-slate-600 to-slate-900 text-transparent bg-clip-text font-serif font-medium"><span class="border-b-2 border-blue-800">Girl's</span> Hostel</h1>
+        <div class="container mx-auto px-8 md:px-16 lg:px-24 xl:px-32 py-16 ">
+                            <!-- Room Advert  -->
+            <div class="flex flex-col md:grid grid-cols-2 items-center justify-center gap-10">
+                <span class="max-md:order-2">
+                <p class="text-gray-800 text-xl font-medium mb-3 leading-normal tracking-wide font-serif"><span class="text-4xl text-blue-900">A refined </span>and tranquil haven for the discerning young woman—this elegant girls' 
+                    hostel room offers comfort, security, and a steady Electricity supply. 
+                    Fully furnished, with attentive housekeeping and a serene atmosphere. 
+                    Enquire <span class="text-blue-900 font-bold ">today</span> to secure your space. </p>
+                </span>
+                <span class="max-md:order-1 mb-6">
+                    <img class="rounded-md w-full lg:w-2/3 hover:scale-105 transition duration-500" src="./image/Room2.webp" alt="">
+                </span>
+            </div>
+                            <!-- Hostel Varieties -->
+            <div class="mt-12 md:mt-18">
+                <h1 class=" mb-12 text-6xl text-slate-800 font-serif font-medium text-center tracking-wide "><span class="pt-1 border-red-400  border-t-2 rounded-lg">Hostel</span> <span class="pb-1 border-green-400  border-b-2 rounded-lg">Plan</span></h1>
+                <div class="flex flex-wrap items-center justify-center gap-12">
+                    <div class="max-xl:order-2 relative w-72 bg-linear-to-br from-blue-50 to-blue-200 text-center text-gray-800/80 border border-gray-200 p-6 pb-16 rounded-lg hover:scale-105 transition duration-500">    <!-- Serena hostel--> 
+                        <h2 class="absolute px-3 text-sm text-white -top-3.5 left-3.5 py-1 bg-blue-400 rounded-full">Ancients of Days</h2>
+                        <p class="font-semibold text-3xl">Serena Hostel</p>
+                        <ul class="list-none text-gray-500 text-sm mt-6 space-y-1">
+                            <li class="flex items-center gap-2">
+                                <svg class="text-green-400" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="#6366F1"/>
+                                </svg>
+                                <p>Craft and creative activity room with classic wooden tables</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="text-green-400" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="#6366F1"/>
+                                </svg>
+                                <p>Garden walkway for relaxation and conversations</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="text-green-400" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="#6366F1"/>
+                                </svg>
+                                <p>Hair and beauty corner with mirrors and vanity setups</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="text-green-400" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="#6366F1"/>
+                                </svg>
+                                <p>Spacious triple/quad rooms with organized shelving</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="text-green-400" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="#6366F1"/>
+                                </svg>
+                                <p>Relaxed curfew with traditional roll call</p>
+                            </li>
+                        </ul>
+                        <button onclick="apply();" type="button" class="buttonName hover:cursor-pointer bg-blue-500 text-sm w-full py-2 rounded-lg text-white font-medium mt-7 hover:bg-blue-600 transition-all">
+                            Book Now
+                        </button>
+                    </div>
+
+                    <div class="max-xl:order-1 w-72 bg-linear-to-b  from-blue-400 via-blue-500 to-blue-600 relative text-center text-white border border-gray-500/30 p-6 pb-14 rounded-lg hover:scale-105 transition duration-500">      <!-- ACCESS HOSTEL -->
+                        <p class="absolute px-3 text-sm -top-3.5 left-3.5 py-1 bg-blue-400 rounded-full">Finalists</p>
+                        <p class="font-semibold text-3xl pt-2">Access Hostel</p>
+                        <ul class="list-none text-white text-sm mt-6 space-y-1">
+                            <li class="flex items-center gap-2">
+                                <svg class="text-green-400" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="currentColor"/>
+                                </svg>
+                                <p>Self-contained single rooms with refined furnishing</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="text-green-400" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="currentColor"/>
+                                </svg>
+                                <p>Extended library access with timeless reading desks</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="text-green-400" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="currentColor"/>
+                                </svg>
+                                <p>Private study lounges with premium WiFi</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="text-green-400" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="currentColor"/>
+                                </svg>
+                                <p>Gourmet kitchen with premium appliances</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="text-green-400" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="currentColor"/>
+                                </svg>
+                                <p>Priority maintenance and housekeeping</p>
+                            </li>                            
+                        </ul>
+                        <button onclick="apply1();" type="button" class="buttonName1 hover:cursor-pointer bg-white text-sm w-full py-2 rounded-lg text-blue-500 font-medium mt-7 hover:bg-gray-200 transition-all">
+                            Book Now
+                        </button>
+                    </div>
+
+                    <div class="max-xl:order-3 relative w-72 bg-linear-to-bl from-blue-50 to-blue-200 text-center text-gray-800/80 border border-gray-200 p-6 rounded-lg hover:scale-105 transition duration-500">    
+                       <!-- AMAZON hostel-->
+                        <h2 class="absolute px-3 text-sm text-white -top-3.5 left-3.5 py-1 bg-blue-400 rounded-full">Freshers</h2>
+                        <h3 class="font-semibold text-3xl">Amazon Hostel</h3>
+                        <ul class="list-none text-gray-500 text-sm mt-6 space-y-1">
+                            <li class="flex items-center gap-2">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="#6366F1"/>
+                                </svg>
+                                <p>Dissertation support lounge with pin boards and resources</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="#6366F1"/>
+                                </svg>
+                                <p>Counseling and wellness room with traditional calm décor</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="#6366F1"/>
+                                </svg>
+                                <p>Legacy hall celebrating outstanding female graduates</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="#6366F1"/>
+                                </svg>
+                                <p>Self-contained single rooms with refined furnishing</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="#6366F1"/>
+                                </svg>
+                                <p>Extended library access with timeless reading desks</p>
+                            </li>
+                           
+                        </ul>
+                        <button onclick="apply2();" type="button" class="buttonName2 bg-blue-500 text-sm w-full py-2 rounded-lg text-white font-medium mt-7 hover:bg-blue-600 transition-all">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                                <!-- Boy's Hostel  -->
+    <section class="bg-linear-to-b from-slate-100 to-slate-200 pb-12">
+        <h1 class="pt-12 tracking-wider text-center text-6xl 
+        bg-linear-to-r from-slate-600 to-slate-900 text-transparent bg-clip-text
+         font-serif font-medium">Boy's <span class="border-b-2 border-blue-800">Hostel</span></h1>
+        <div class="container mx-auto px-8 md:px-16 lg:px-24 xl:px-32 py-16 flex flex-col md:grid grid-cols-2 items-center justify-center gap-7">
+            <span class="max-md:order-1 mb-6">
+                <img class="rounded-md w-full lg:w-2/3 hover:scale-105 transition duration-500" src="./image/Room5.webp" alt="">
+            </span>
+
+            <span class="max-md:order-2">
+               <p class="text-gray-800 text-xl font-medium mb-3 leading-normal tracking-wide font-serif"><span class="text-4xl text-blue-900">For young men </span> of ambition and integrity—this hostel offers a refined
+                 living space, fostering both productivity and fellowship. Centrally located, meticulously maintained,
+                  and designed for convenience. Limited vacancies. 
+                 <span class="text-blue-900 font-bold ">Enquire Today.</span></p>
+            </span>
+        </div>
+                                    <!-- Hostel Varieties -->
+            <div class="mt-12 md:mt-18">
+                <h1 class=" mb-12 text-6xl text-slate-800 font-serif font-medium text-center tracking-wide "><span class="pt-1 border-red-400  border-t-2 rounded-lg">Hostel</span> <span class="pb-1 border-green-400  border-b-2 rounded-lg">Plan</span></h1>
+                <div class="flex flex-wrap items-center justify-center gap-12">
+                    <div class="max-xl:order-2 relative w-72 bg-linear-to-br from-blue-50 to-blue-200 text-center text-gray-800/80 border border-gray-200 p-6 pb-16 rounded-lg hover:scale-105 transition duration-500">    <!-- Medical hostel--> 
+                        <h2 class="absolute px-3 text-sm text-white -top-3.5 left-3.5 py-1 bg-blue-400 rounded-full">Health Science Block</h2>
+                        <p class="font-semibold text-3xl">Medical Hostel</p>
+                        <ul class="list-none text-gray-500 text-sm mt-6 space-y-1">
+                            <li class="flex items-center gap-2">
+                                <svg class="text-green-400" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="#6366F1"/>
+                                </svg>
+                                <p>Access to all basic courses</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="text-green-400" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="#6366F1"/>
+                                </svg>
+                                <p>Neatly arranged bunk-style rooms for shared beginnings</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="text-green-400" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="#6366F1"/>
+                                </svg>
+                                <p>Orientation sports grounds for bonding through play</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="text-green-400" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="#6366F1"/>
+                                </svg>
+                                <p>Strict lights-out policy ensuring discipline and rest</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="text-green-400" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="#6366F1"/>
+                                </svg>
+                                <p>A notice board hall for freshers’ announcements and events</p>
+                            </li>
+                        </ul>
+                        <button onclick="apply3();" type="button" class="buttonName3 bg-blue-500 text-sm w-full py-2 rounded-lg text-white font-medium mt-7 hover:bg-blue-600 transition-all">
+                            Book Now
+                        </button>
+                    </div>
+
+                    <div class="max-xl:order-1 w-72 bg-linear-to-b  from-blue-400 via-blue-500 to-blue-600 relative text-center text-white border border-gray-500/30 p-6 pb-14 rounded-lg hover:scale-105 transition duration-500">      <!-- PH HOSTEL -->
+                        <p class="absolute px-3 text-sm -top-3.5 left-3.5 py-1 bg-blue-400 rounded-full">Freshers & Old Takers</p>
+                        <p class="font-semibold text-3xl pt-2">PH Hostel</p>
+                        <ul class="list-none text-white text-sm mt-6 space-y-1">
+                            <li class="flex items-center gap-2">
+                                <svg class="text-green-400" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="currentColor"/>
+                                </svg>
+                                <p>Larger shared rooms with sturdy metal wardrobes</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="text-green-400" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="currentColor"/>
+                                </svg>
+                                <p>A game zone with table tennis and classic board games</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="text-green-400" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="currentColor"/>
+                                </svg>
+                                <p>Relaxed curfew allowing later academic pursuits</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="text-green-400" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="currentColor"/>
+                                </svg>
+                                <p>Group study halls with chalkboards for brainstorming</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="text-green-400" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="currentColor"/>
+                                </svg>
+                                <p>Open courtyard for evening discussions and debates</p>
+                            </li>                            
+                        </ul>
+                        <button onclick="apply4();" type="button" class="buttonName4 bg-white text-sm w-full py-2 rounded-lg text-blue-500 font-medium mt-7 hover:bg-gray-200 transition-all">
+                            Book Now
+                        </button>
+                    </div>
+
+                    <div class="max-xl:order-3 relative w-72 bg-linear-to-bl from-blue-50 to-blue-200 text-center text-gray-800/80 border border-gray-200 p-6 rounded-lg hover:scale-105 transition duration-500">       <!-- Old Boys hostel-->
+                        <h2 class="absolute px-3 text-sm text-white -top-3.5 left-3.5 py-1 bg-blue-400 rounded-full">Senior Men them</h2>
+                        <h3 class="font-semibold text-3xl">Old Boys Hostel</h3>
+                        <ul class="list-none text-gray-500 text-sm mt-6 space-y-1">
+                            <li class="flex items-center gap-2">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="#6366F1"/>
+                                </svg>
+                                <p>Private single rooms for focused preparation</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="#6366F1"/>
+                                </svg>
+                                <p>Late-night study rooms with vintage reading lamps</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="#6366F1"/>
+                                </svg>
+                                <p>Research and project discussion chambers</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="#6366F1"/>
+                                </svg>
+                                <p>A classic-style gym with minimal but effective equipment</p>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.162 13.5 2.887 9.225l1.07-1.069 3.205 3.207 6.882-6.882 1.069 1.07z" fill="#6366F1"/>
+                                </svg>
+                                <p>Alumni wall showcasing past final-year achievers</p>
+                            </li>                            
+                        </ul>
+                        <button onclick="apply5();" type="button" class="buttonName5 bg-blue-500 text-sm w-full py-2 rounded-lg text-white font-medium mt-7 hover:bg-blue-600 transition-all">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+            </div>                    
+    </section>
+
+                      <!-- Frequently asked Questions -->
+                       <!--                   ////////                     -->
+                        <!--                   ////////                     -->                    
+    <section class="bg-linear-to-tl from-slate-950 to-slate-800">
+        <div class="container mx-auto px-6 pt-14">
+            <h2 class="text-5xl md:text-5xl text-slate-200 pt-4 mb-7 md:mb-10 tracking-wide font-serif italic text-center">Frequently Asked Questions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-17">
+                <details class="group [&_summary::-webkit-details-marker]:hidden" open>
+                    <summary
+                        class="flex items-center justify-between gap-1.5 rounded-md border border-gray-100 bg-slate-200 p-4 text-gray-900"
+                    >
+                        <h2 class="text-lg font-medium">What types of hostels are available?</h2>
+
+                        <svg
+                            class="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+
+                    <p class="px-4 pt-4 text-slate-300">
+                        The university offers separate hostels for male and female students, equipped with modern amenities to ensure comfort and safety.
+                    </p>
+                </details>
+
+                <details class="group [&_summary::-webkit-details-marker]:hidden">
+                    <summary
+                        class="flex items-center justify-between gap-1.5 rounded-md border border-gray-100 bg-slate-200 p-4 text-gray-900"
+                    >
+                        <h2 class="text-lg font-medium">What are the benefits of staying in the university hostel?</h2>
+
+                        <svg
+                            class="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+
+                    <p class="px-4 pt-4 text-slate-300">
+                        Staying in the hostel provides convenience with close access to campus facilities, a secure environment, opportunities to build friendships, and a focused atmosphere for academic success.
+                    </p>
+                </details>
+
+                <details class="group [&_summary::-webkit-details-marker]:hidden">
+                    <summary
+                        class="flex items-center justify-between gap-1.5 rounded-md border border-gray-100 bg-slate-200 p-4 text-gray-900"
+                    >
+                        <h2 class="text-lg font-medium">How is security managed in the hostels?</h2>
+
+                        <svg
+                            class="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+
+                    <p class="px-4 pt-4 text-slate-300">
+                        The university provides 24/7 security personnel and surveillance systems to ensure the safety of all hostel residents.
+                    </p>
+                </details>
+
+                <details class="group [&_summary::-webkit-details-marker]:hidden">
+                    <summary
+                        class="flex items-center justify-between gap-1.5 rounded-md border border-gray-100 bg-slate-200 p-4 text-gray-900"
+                    >
+                        <h2 class="text-lg font-medium">Can I request special accommodations in the hostel?</h2>
+
+                        <svg
+                            class="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+
+                    <p class="px-4 pt-4 text-slate-300">
+                        Yes, students with special needs or requests can contact the hostel management office to discuss accommodations.
+                    </p>
+                </details>
+
+                <details class="group [&_summary::-webkit-details-marker]:hidden">
+                    <summary
+                        class="flex items-center justify-between gap-1.5 rounded-md border border-gray-100 bg-slate-200 p-4 text-gray-900"
+                    >
+                        <h2 class="text-lg font-medium">How do I apply for hostel accommodation?</h2>
+
+                        <svg
+                            class="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+
+                    <p class="px-4 pt-4 text-slate-300">
+                        Applications for hostel accommodation are submitted during the admission process or at the start of each academic session through the university's accommodation office.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>    
+
+                            <!-- Gallary Introduction -->
+    <section class="bg-linear-to-r from-blue-900 to-blue-950">
+        <div class="container mx-auto px-6 py-12 flex flex-col items-center justify-center">
+            <h1 class="text-center pb-8 text-4xl text-slate-200 font-medium tracking-wide text-pretty "> Check out our school Gallary Section</h1>
+            <button class="uppercase bg-linear-to-r from-blue-500 to-blue-900 rounded-2xl px-4 py-2 text-blue-100 text-xl font-medium hover:opacity-80 active:opacity-0 transition duration-500">
+                <a href="./gallary.html" >
+                    Gallary
+                </a>
+            </button>
+        </div>
+    </section>
+                                        <!-- Footer Section  -->
+    <footer class="bg-slate-50  py-16 text-sm text-gray-800/70">
+        <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-4">
+            <div class="  text-center order-3 lg:order-1">Copyright © 2025 <a href="www.linkedin.com/in/ngubi-paul-74a593364" class="text-blue-500 hover:underline">Ngubi Paul F</a>. All rights reservered.</div>
+            
+            <div class="flex items-center gap-4  text-indigo-500 order-2 lg:order-2">
+                <a href="https://www.facebook.com/igbinedionuniversity?_rdc=1&_rdr" class="hover:-translate-y-0.5 transition-all duration-300">     <!--   Facebook link -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="https://instagram.com/iuokadaofficial" class="hover:-translate-y-0.5 transition-all duration-300">   <!--   Instagram link -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 11.37a4 4 0 1 1-7.914 1.173A4 4 0 0 1 16 11.37m1.5-4.87h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/school/igbinedion-university-okada/" class="hover:-translate-y-0.5 transition-all duration-300">  <!--   linkedIn link -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6M6 9H2v12h4zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="https://twitter.com/iuokadaofficial" class="hover:-translate-y-0.5 transition-all duration-300">   <!--   twitter link -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="https://github.com/Paullaid" class="hover:-translate-y-0.5 transition-all duration-300"> <!--   Github link -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9 18c-4.51 2-5-2-7-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="flex items-center gap-8 order-2 lg:order-3">
+                <a href="./main.html" class="font-medium text-gray-500 hover:text-black transition-all">
+                    Home
+                </a>
+                <a href="https://iuokada.edu.ng/history-2/" class="font-medium text-gray-500 hover:text-black transition-all">
+                    About Us
+                </a>
+                <a href="https://iuokada.edu.ng/admission-instruction/" class="font-medium text-gray-500 hover:text-black transition-all">
+                    Admission
+                </a>            
+                <a href="https://iuokada.edu.ng/personnel/dr-raphael-ehikhuemhen-asibor/" class="font-medium text-gray-500 hover:text-black transition-all">
+                    Help
+                </a>
+            </div>            
+        </div>
+    </footer>
+
+                    <!-- Change of text in Hostel Booking. From "Book Now" to "Booked"  -->
+    <script>
+            function apply() {
+                const changeName = document.querySelector(".buttonName");
+                 if (changeName.innerText === "Book Now") {
+                    changeName.innerHTML = "Booked";
+                 }else{
+                    changeName.innerHTML = "Book Now";
+                 } 
+             }
+
+             function apply1() {
+                const changeName = document.querySelector(".buttonName1");
+                 if (changeName.innerText === "Book Now") {
+                    changeName.innerHTML = "Booked";
+                 }else{
+                    changeName.innerHTML = "Book Now";
+                 } 
+             }
+
+             function apply2() {
+                const changeName = document.querySelector(".buttonName2");
+                 if (changeName.innerText === "Book Now") {
+                    changeName.innerHTML = "Booked";
+                 }else{
+                    changeName.innerHTML = "Book Now";
+                 } 
+             }
+
+             function apply3() {
+                const changeName = document.querySelector(".buttonName3");
+                 if (changeName.innerText === "Book Now") {
+                    changeName.innerHTML = "Booked";
+                 }else{
+                    changeName.innerHTML = "Book Now";
+                 } 
+             }
+
+             function apply4() {
+                const changeName = document.querySelector(".buttonName4");
+                 if (changeName.innerText === "Book Now") {
+                    changeName.innerHTML = "Booked";
+                 }else{
+                    changeName.innerHTML = "Book Now";
+                 } 
+             }
+
+             function apply5() {
+                const changeName = document.querySelector(".buttonName5");
+                 if (changeName.innerText === "Book Now") {
+                    changeName.innerHTML = "Booked";
+                 }else{
+                    changeName.innerHTML = "Book Now";
+                 } 
+             }
+    </script>
+
+    <script>
+        const menu = document.getElementById('menu');
+        const closeMenu = document.getElementById('close-menu');
+        const openMenu = document.getElementById('open-menu');
+
+        openMenu.addEventListener('click', () => {
+            menu.classList.remove('max-md:-left-full');
+            menu.classList.add('max-md:left-0');
+        });
+
+        function closeNavbar() {
+            menu.classList.remove('max-md:left-0');
+            menu.classList.add('max-md:-left-full');
+        }
+
+        closeMenu.addEventListener('click', () => {
+            closeNavbar();   
+        });
+    </script>
+    
+</body>
+</html>
